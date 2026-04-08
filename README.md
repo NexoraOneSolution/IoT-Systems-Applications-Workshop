@@ -1,119 +1,93 @@
-# 🌍 IoT Systems & Applications Workshop 2025  
+# IoT Systems & Applications Workshop 2025
 
-🚀 **IoT Systems & Applications Workshop 2025** led by **Aryan Pandya (Trainer & Organizer)** in collaboration with the **MCA Department, Sarvajanik College of Engineering & Technology (SCET)**, with guidance and support from **Dr. Kaushika Pal (Faculty, MCA Dept, SCET)**.  
+This repository contains the workshop materials, simulation projects, reference assets, and supporting documents for the IoT Systems & Applications Workshop 2025 led by Aryan Pandya in collaboration with the MCA Department at Sarvajanik College of Engineering & Technology (SCET), Surat.
 
-This workshop is designed to provide students with a complete **IoT learning experience** — from **concepts and simulations** to **hardware prototyping and real-world automation**. Participants will explore IoT fundamentals, build projects using **ESP8266 microcontrollers and sensors**, and learn to connect devices with **cloud dashboards, automation systems, and disaster management scenarios**.  
+## Workshop Snapshot
 
-💡 **Key Highlights**  
-- Hands-on with **ESP8266, DHT, BMP280, Rain & Gas sensors, and more**  
-- **Simulation projects**: Smart Street Light, Weather Station  
-- **Practical projects**: RC Car, Drone, Smart Home, Gate Automation, Cyber IoT  
-- **Live data monitoring** with **cloud dashboards**  
-- **Disaster scenario demo** with alerts via **LEDs, Buzzers & Cloud notifications**  
- 
+- Date: 17 September 2025
+- Time: 9:00 AM to 4:00 PM
+- Venue: Computation Lab, MCA Department, SCET, Surat
+- Trainer and Organizer: Aryan Pandya
+- Faculty Support: Dr. Kaushika Pal
 
----
+## What This Repository Includes
 
-## 📅 Event Details
-- **Date:** 17th September 2025  
-- **Time:** 9:00 AM – 4:00 PM  
-- **Venue:** Sarvajanik College of Engineering & Technology (SCET), Surat  
-- **Location:** Computation Lab, MCA Department, SCET  
-- **Trainer & Organizer:** Aryan Pandya  
-- **Faculty Support:** Dr. Kaushika Pal, MCA Department, SCET  
+- the full workshop schedule PDF
+- beginner-friendly simulation projects
+- circuit references and media assets
+- a sample workshop certificate page
+- licensing guidance for code and workshop documents
 
----
+## Repository Structure
 
-## 📅 Workshop Schedule  👉 [Click here to download the full day schedule (PDF)](https://github.com/Aryan-136/IoT-Systems-Applications-Workshop/blob/639d5b818c1c7e5d7a68964835c1b6ad0b20c320/IoT%20Workshop%20%E2%80%93%20Full%20Day%20Schedule.pdf)
+```text
+.
+|-- assets/
+|   |-- circuit-diagrams/
+|   `-- open-graph/
+|-- docs/
+|   |-- certificates/
+|   `-- schedule/
+|-- projects/
+|   `-- simulations/
+|       |-- smart-street-light/
+|       `-- weather-station/
+|-- LICENSE
+`-- README.md
+```
 
-  
+## Getting Started
 
-### 🌅 Morning Session  
-- **9:00 AM – 9:15 AM** → Registration & Welcome  
-- **9:15 AM – 10:45 AM** → Introduction to IoT & Real-Life Applications  
-  - IoT concepts & fundamentals  
-  - Real-world case studies  
-  - Future scope & career opportunities  
-- **10:45 AM – 11:00 AM** → Tea / Coffee Break + Team Distribution for Midday Session  
+1. Review the [full workshop schedule](./docs/schedule/iot-workshop-full-day-schedule.pdf).
+2. Open the [simulation project index](./projects/simulations/README.md).
+3. Choose a project and follow the project README for components, wiring, and steps.
+4. Use the circuit images in each project folder to recreate the build in Tinkercad or Arduino.
+5. Upload or simulate the `.ino` sketch from the project's `src/` folder.
 
----
+## Simulation Projects
 
-### 🔄 Midday Session (Parallel Activities)  
-- **11:00 AM – 12:00 PM** →  
-  - **Group A** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group B** → Simulation Projects *(Smart Street Light + Weather Station)*  
+### Smart Street Light
 
-- **12:00 PM – 1:00 PM** →  
-  - **Group B** → Project Showcases *(RC Car, Drone, Gate Automation, Cyber IoT, Smart Home)*  
-  - **Group A** → Simulation Projects *(Smart Street Light + Weather Station)*  
+An introductory automation project that uses an LDR and Arduino Uno to switch a street light on and off based on ambient brightness.
 
----
+- Project folder: [projects/simulations/smart-street-light](./projects/simulations/smart-street-light/)
+- Project guide: [README](./projects/simulations/smart-street-light/README.md)
 
-### 🍴 Lunch Break  
-- **1:00 PM – 2:00 PM** → Lunch & Networking  
+### Weather Station
 
----
+A multi-mode Arduino simulation that displays temperature, air quality, and simulated humidity on a 16x2 LCD.
 
-### 🛠️ Afternoon Session (Hands-On Practical)  
-**Project: Smart Weather & Disaster Management System**  
+- Project folder: [projects/simulations/weather-station](./projects/simulations/weather-station/)
+- Project guide: [README](./projects/simulations/weather-station/README.md)
 
-- **2:00 PM – 2:15 PM** → Introduction to Hardware & Sensors  
-  - ESP8266, DHT11/DHT22, BMP280, Rain Sensor, Soil Moisture, MQ-135  
+## Additional Resources
 
-- **2:15 PM – 2:45 PM** → Wiring & Setup (Team-based)  
+- Schedule PDF: [docs/schedule/iot-workshop-full-day-schedule.pdf](./docs/schedule/iot-workshop-full-day-schedule.pdf)
+- Certificate sample: [docs/certificates/aryan-certificate.html](./docs/certificates/aryan-certificate.html)
+- RC car wiring references:
+  - [assets/circuit-diagrams/rc-car-wiring-0.png](./assets/circuit-diagrams/rc-car-wiring-0.png)
+  - [assets/circuit-diagrams/rc-car-wiring-1.jpg](./assets/circuit-diagrams/rc-car-wiring-1.jpg)
 
-- **2:45 PM – 3:30 PM** → Coding & Live Data Monitoring  
-  - Serial Monitor outputs  
-  - Cloud dashboard integration  
+## Learning Outcomes
 
-- **3:30 PM – 3:50 PM** → Disaster Scenario Demo  
-  - Rain, Flood & Pollution alerts  
-  - Visual (LED) + Audio (Buzzer) alarms  
+- understand core IoT concepts and real-world applications
+- practice component-level wiring and simulation workflows
+- build confidence with Arduino and sensor integration
+- learn how to organize simple IoT projects for demos and workshops
+- move from guided simulation to real hardware thinking
 
-- **3:50 PM – 4:00 PM** → Wrap-Up, Feedback Collection, Certificates & Group Photo  
+## Trainer
 
----
+Aryan Pandya
 
-## 🛠️ Hardware & Software Used
-- **Microcontroller:** ESP8266 NodeMCU  
-- **Sensors:**  
-  - DHT11 / DHT22 – Temperature & Humidity  
-  - BMP280 – Pressure & Altitude  
-  - Rain Sensor – Flood Alert  
-  - Soil Moisture Sensor – Agriculture Use  
-  - MQ-135 – Air Quality / Pollution  
-- **Actuators:** Buzzer, LED  
-- **Simulation Platforms:** Wokwi, Tinkercad, Proteus  
-- **Cloud Platforms:** ThingsBoard / Blynk / MQTT Dashboard  
+- LinkedIn: [linkedin.com/in/aryan-pandya](https://www.linkedin.com/in/aryan-pandya)
+- GitHub: [github.com/NexoraOneSolution](https://github.com/NexoraOneSolution)
 
----
+## License
 
-## 🎯 Learning Outcomes
-- Fundamentals of IoT systems & applications  
-- Practical experience with ESP8266 and essential sensors  
-- Simulations + hardware integration workflow  
-- Building IoT projects with **real-world disaster management use cases**  
-- Team collaboration and problem-solving skills  
-- Certificate of Participation  
+This repository uses dual licensing.
 
----
+- Code is licensed under the MIT License.
+- Workshop documents, slides, and media are licensed under CC BY-NC 4.0.
 
-## 👨‍🏫 Trainer & Organizer
-**Aryan Pandya** – IoT & Cybersecurity Specialist  
-- Conducting IoT, Security & Automation workshops  
-- Organizer of community tech meetups & hands-on sessions  
-
-🔗 Connect with me:  
-- [LinkedIn](https://www.linkedin.com/in/aryan-pandya)  
-- [Instagram](https://instagram.com/yourprofile)  
-- [Linktree](https://linktr.ee/yourprofile)  
-
----
-
-## 📜 License
-This repository uses dual licensing:  
-
-- **Code** → MIT License  
-- **Slides, Docs & Workshop Materials** → CC BY-NC 4.0  
-
-See the [LICENSE](./LICENSE) file for details.  
+See [LICENSE](./LICENSE) for details.

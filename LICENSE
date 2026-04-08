@@ -1,10 +1,10 @@
 This repository uses dual licensing:
 
-- Code → MIT License
-- Slides, Documentation & Workshop Materials → CC BY-NC 4.0
+- Code: MIT License
+- Slides, documentation, and workshop materials: CC BY-NC 4.0
 
 ====================================================================
-MIT License (for Code)
+MIT License (for code)
 ====================================================================
 
 MIT License
@@ -30,22 +30,23 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ====================================================================
-Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
-(for Documentation, Slides, and Workshop Materials)
+Creative Commons Attribution-NonCommercial 4.0 International
+(for documentation, slides, and workshop materials)
 ====================================================================
 
 Copyright (c) 2025 Aryan Pandya
 
-This work (slides, documentation, and workshop materials) is licensed under a
-Creative Commons Attribution-NonCommercial 4.0 International License.
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License.
 
 You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
+- Share: copy and redistribute the material in any medium or format
+- Adapt: remix, transform, and build upon the material
 
 Under the following terms:
-- Attribution — You must give appropriate credit, provide a link to the license,
+- Attribution: You must give appropriate credit, provide a link to the license,
   and indicate if changes were made.
-- NonCommercial — You may not use the material for commercial purposes.
+- NonCommercial: You may not use the material for commercial purposes.
 
-Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Full license text:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
