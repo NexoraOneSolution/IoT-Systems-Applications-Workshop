@@ -1,64 +1,61 @@
 # Weather Station
 
-This project simulates a simple weather station using Arduino Uno, a gas sensor, a TMP36 temperature sensor, a potentiometer as a humidity substitute, and a 16x2 I2C LCD.
+This project simulates a classroom-friendly weather station using Arduino Uno, a TMP36 temperature sensor, a gas sensor, a potentiometer for humidity simulation, and a 16x2 LCD with an I2C backpack.
 
-## Learning Goals
+## Project Preview
+
+![Weather station circuit](./media/circuit.jpg)
+![Weather station Tinkercad layout](./media/tinkercad-layout.png)
+
+## Quick Links
+
+- Sketch: [src/weather_station/weather_station.ino](./src/weather_station/weather_station.ino)
+- Pinout guide: [pinout.md](./pinout.md)
+- Troubleshooting guide: [troubleshooting.md](./troubleshooting.md)
+- Bill of materials: [bom.csv](./bom.csv)
+- Reference PDF: [docs/weather-station-guide.pdf](./docs/weather-station-guide.pdf)
+- Public simulation: [Open the public weather station simulation](https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=VNVADSSn7aQBaEI5H3D-EuOWA37Xi6T7O1XbTCPMKGM)
+
+## Learning Outcomes
 
 - build a multi-input Arduino project
 - switch between display modes using pushbuttons
 - read analog sensor data and map it to user-friendly values
 - present measurements on a character LCD
+- explain how one controller can manage multiple sensor views
 
-## Folder Contents
+## Core Components
 
-- [src/weather_station.ino](./src/weather_station.ino): Arduino sketch
-- [bom.csv](./bom.csv): bill of materials
-- [media/circuit.jpg](./media/circuit.jpg): main circuit image
-- [media/tinkercad-layout.png](./media/tinkercad-layout.png): Tinkercad layout view
-- [docs/weather-station-guide.pdf](./docs/weather-station-guide.pdf): workshop reference PDF
-
-## Public Simulation
-
-- Tinkercad link: [Open the public weather station simulation](https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=VNVADSSn7aQBaEI5H3D-EuOWA37Xi6T7O1XbTCPMKGM)
-
-## Components
-
-| Component | Quantity |
-| --- | --- |
-| Arduino Uno R3 | 1 |
-| TMP36 temperature sensor | 1 |
-| Gas sensor | 1 |
-| Potentiometer | 1 |
-| LCD 16x2 with I2C backpack | 1 |
-| Pushbuttons | 3 |
-| Resistors | multiple |
-
-## Pin Mapping
-
-- `A0` -> temperature sensor
-- `A1` -> gas sensor
-- `A2` -> potentiometer used for humidity simulation
-- `D8` -> temperature mode button
-- `D9` -> air-quality mode button
-- `D10` -> humidity mode button
+| Component | Quantity | Notes |
+| --- | --- | --- |
+| Arduino Uno R3 | 1 | Main controller |
+| TMP36 temperature sensor | 1 | Temperature input |
+| Gas sensor | 1 | Air-quality style analog reading |
+| Potentiometer | 1 | Simulates humidity change |
+| LCD 16x2 with I2C backpack | 1 | Displays the current mode and reading |
+| Pushbuttons | 3 | Changes the active display mode |
 
 ## How To Run
 
-1. Recreate the circuit from the images in [`media/`](./media/).
-2. Open [`src/weather_station.ino`](./src/weather_station.ino) in Arduino IDE or Tinkercad text mode.
-3. Start the simulation.
-4. Press one of the mode buttons to switch the LCD view.
-5. Adjust the sensors and observe the readings on the display.
+1. Recreate the circuit from the images in [`media/`](./media/) and the table in [`pinout.md`](./pinout.md).
+2. Open [`src/weather_station/weather_station.ino`](./src/weather_station/weather_station.ino) in Arduino IDE or Tinkercad text mode.
+3. Start the simulation or upload the sketch to a physical Arduino Uno.
+4. Press one of the three mode buttons.
+5. Adjust the sensors and observe the LCD and Serial Monitor output.
 
 ## Display Modes
 
 - Temperature mode: shows temperature in Celsius with a simple condition label
-- Air Quality mode: shows the raw gas sensor reading
+- Air quality mode: shows the raw gas sensor reading
 - Humidity mode: maps the potentiometer to a percentage value
 
-## Code Notes
+## Troubleshooting Highlights
 
-The sketch is organized into small helper functions so students can follow the mode logic, sensor reads, and LCD updates more easily during the workshop.
+- If the LCD is blank, confirm the I2C LCD wiring and library setup.
+- If no mode changes happen, verify the three button connections to `D8`, `D9`, and `D10`.
+- If readings never change, move the TMP36, gas sensor, or potentiometer in the simulation and check the Serial Monitor.
+
+See the full troubleshooting notes in [troubleshooting.md](./troubleshooting.md).
 
 ## Related Files
 

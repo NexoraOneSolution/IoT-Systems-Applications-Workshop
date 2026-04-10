@@ -1,0 +1,59 @@
+name: Workshop CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  docs-and-spelling:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install markdownlint
+        run: npm install --global markdownlint-cli
+
+      - name: Lint Markdown
+        run: markdownlint "**/*.md" --disable MD013
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install codespell
+        run: pip install codespell
+
+      - name: Run codespell
+        run: codespell --skip=".git,*.pdf,*.jpg,*.png,*.gif"
+
+  arduino-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Arduino CLI
+        uses: arduino/setup-arduino-cli@v2
+
+      - name: Install Arduino core and libraries
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr
+          arduino-cli lib install "Adafruit LiquidCrystal"
+
+      - name: Compile smart street light sketch
+        run: arduino-cli compile --fqbn arduino:avr:uno projects/simulations/smart-street-light/src/smart_street_light
+
+      - name: Compile weather station sketch
+        run: arduino-cli compile --fqbn arduino:avr:uno projects/simulations/weather-station/src/weather_station

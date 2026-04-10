@@ -1,4 +1,4 @@
-// Smart Street Light using an LDR and Arduino Uno
+// Smart Street Light using an LDR and Arduino Uno.
 
 const uint8_t LDR_PIN = A5;
 const uint8_t LIGHT_PIN = 3;

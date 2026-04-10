@@ -1,6 +1,6 @@
 # IoT Systems & Applications Workshop 2025
 
-This repository contains the workshop materials, simulation projects, reference assets, and supporting documents for the IoT Systems & Applications Workshop 2025 led by Aryan Pandya in collaboration with the MCA Department at Sarvajanik College of Engineering & Technology (SCET), Surat.
+This repository is the teaching hub for the IoT Systems & Applications Workshop 2025 led by Aryan Pandya in collaboration with the MCA Department at Sarvajanik College of Engineering & Technology (SCET), Surat. It now includes workshop-ready onboarding docs, core simulation projects, extension project tracks, and reusable classroom resources.
 
 ## Workshop Snapshot
 
@@ -10,15 +10,15 @@ This repository contains the workshop materials, simulation projects, reference 
 - Trainer and Organizer: Aryan Pandya
 - Faculty Support: Dr. Kaushika Pal
 
-## What This Repository Includes
+## Quick Start
 
-- the full workshop schedule PDF
-- beginner-friendly simulation projects
-- circuit references and media assets
-- a sample workshop certificate page
-- licensing guidance for code and workshop documents
+1. Read the [getting started guide](./docs/getting-started.md).
+2. Review the [full workshop schedule](./docs/schedule/iot-workshop-full-day-schedule.pdf).
+3. Open the [core simulation index](./projects/simulations/README.md).
+4. Choose a project and follow its README, pinout guide, and BOM.
+5. Use the [workshop resources pack](./docs/workshop-resources/README.md) for slides, assignment work, quiz prompts, and capstone ideas.
 
-## Repository Structure
+## Repository Map
 
 ```text
 .
@@ -27,8 +27,10 @@ This repository contains the workshop materials, simulation projects, reference 
 |   `-- open-graph/
 |-- docs/
 |   |-- certificates/
-|   `-- schedule/
+|   |-- schedule/
+|   `-- workshop-resources/
 |-- projects/
+|   |-- extensions/
 |   `-- simulations/
 |       |-- smart-street-light/
 |       `-- weather-station/
@@ -36,45 +38,54 @@ This repository contains the workshop materials, simulation projects, reference 
 `-- README.md
 ```
 
-## Getting Started
+## Core Workshop Projects
 
-1. Review the [full workshop schedule](./docs/schedule/iot-workshop-full-day-schedule.pdf).
-2. Open the [simulation project index](./projects/simulations/README.md).
-3. Choose a project and follow the project README for components, wiring, and steps.
-4. Use the circuit images in each project folder to recreate the build in Tinkercad or Arduino.
-5. Upload or simulate the `.ino` sketch from the project's `src/` folder.
+| Project | What Students Build | Key Concepts | Workshop Files |
+| --- | --- | --- | --- |
+| Smart Street Light | An automatic street light using an LDR and transistor-controlled output | Analog sensing, threshold logic, digital output, automation | [README](./projects/simulations/smart-street-light/README.md) |
+| Weather Station | A multi-mode weather monitor with LCD output and buttons | Multi-sensor input, LCD display, mode switching, mapped readings | [README](./projects/simulations/weather-station/README.md) |
 
-## Simulation Projects
+## Workshop Resources
 
-### Smart Street Light
+| Resource | Purpose |
+| --- | --- |
+| [docs/getting-started.md](./docs/getting-started.md) | Software setup, board selection, libraries, and first-run steps |
+| [docs/workshop-resources/presentation-outline.md](./docs/workshop-resources/presentation-outline.md) | Slide-by-slide teaching flow for a one-day session |
+| [docs/workshop-resources/assignment-sheet.md](./docs/workshop-resources/assignment-sheet.md) | Guided student task sheet and submission expectations |
+| [docs/workshop-resources/mini-quiz.md](./docs/workshop-resources/mini-quiz.md) | Short quiz with answer key for recap or evaluation |
+| [docs/workshop-resources/final-project-ideas.md](./docs/workshop-resources/final-project-ideas.md) | Suggested capstone and follow-up project ideas |
+| [docs/workshop-resources/facilitator-checklist.md](./docs/workshop-resources/facilitator-checklist.md) | Setup checklist for instructors and lab assistants |
 
-An introductory automation project that uses an LDR and Arduino Uno to switch a street light on and off based on ambient brightness.
+## Extension Project Tracks
 
-- Project folder: [projects/simulations/smart-street-light](./projects/simulations/smart-street-light/)
-- Project guide: [README](./projects/simulations/smart-street-light/README.md)
+The [extension projects folder](./projects/extensions/README.md) adds follow-up ideas that can be used as lab assignments, mini-hackathon prompts, or capstone starters.
 
-### Weather Station
+| Track | Focus |
+| --- | --- |
+| [Smart Irrigation System](./projects/extensions/smart-irrigation-system/README.md) | Soil-based watering automation |
+| [Gas Leak Detector](./projects/extensions/gas-leak-detector/README.md) | Safety alerting with sensors and buzzers |
+| [Home Security Alarm](./projects/extensions/home-security-alarm/README.md) | Motion detection and intrusion alerts |
+| [Temperature Logger](./projects/extensions/temperature-logger/README.md) | Time-series sensor logging and trend thinking |
+| [MQTT Cloud Monitoring](./projects/extensions/mqtt-cloud-monitoring/README.md) | Sending sensor data to dashboards and cloud tools |
 
-A multi-mode Arduino simulation that displays temperature, air quality, and simulated humidity on a 16x2 LCD.
+## Public Simulation Links
 
-- Project folder: [projects/simulations/weather-station](./projects/simulations/weather-station/)
-- Project guide: [README](./projects/simulations/weather-station/README.md)
+- Weather Station public Tinkercad link: [Open simulation](https://www.tinkercad.com/things/7MCBJ2HEQz6-project-stimulation-02-weather-monitoring-station?sharecode=VNVADSSn7aQBaEI5H3D-EuOWA37Xi6T7O1XbTCPMKGM)
+- Smart Street Light: use the local media and pinout guide to rebuild the circuit in Tinkercad or Arduino IDE. Add a public share link later if the instructor publishes one.
 
-## Additional Resources
+## Extra Reference Assets
 
-- Schedule PDF: [docs/schedule/iot-workshop-full-day-schedule.pdf](./docs/schedule/iot-workshop-full-day-schedule.pdf)
-- Certificate sample: [docs/certificates/aryan-certificate.html](./docs/certificates/aryan-certificate.html)
-- RC car wiring references:
-  - [assets/circuit-diagrams/rc-car-wiring-0.png](./assets/circuit-diagrams/rc-car-wiring-0.png)
-  - [assets/circuit-diagrams/rc-car-wiring-1.jpg](./assets/circuit-diagrams/rc-car-wiring-1.jpg)
+- [docs/certificates/aryan-certificate.html](./docs/certificates/aryan-certificate.html)
+- [assets/circuit-diagrams/rc-car-wiring-0.png](./assets/circuit-diagrams/rc-car-wiring-0.png)
+- [assets/circuit-diagrams/rc-car-wiring-1.jpg](./assets/circuit-diagrams/rc-car-wiring-1.jpg)
 
 ## Learning Outcomes
 
-- understand core IoT concepts and real-world applications
-- practice component-level wiring and simulation workflows
-- build confidence with Arduino and sensor integration
-- learn how to organize simple IoT projects for demos and workshops
-- move from guided simulation to real hardware thinking
+- understand core IoT concepts and where sensors, actuators, and controllers fit together
+- practice Arduino-based simulation workflows before moving to physical hardware
+- wire simple circuits confidently using reference diagrams and pinout sheets
+- explain automation logic, thresholds, and mode-based interfaces
+- move from guided workshop exercises into independent extension projects
 
 ## Trainer
 

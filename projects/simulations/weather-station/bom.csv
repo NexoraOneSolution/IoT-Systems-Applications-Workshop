@@ -1,9 +1,10 @@
-﻿Name,Quantity,Component
-"U1",1," Arduino Uno R3"
-"U2",1," Temperature Sensor [TMP36]"
-"U3",1,"MCP23008-based, 32 (0x20) LCD 16 x 2 (I2C)"
-"S1, S2, S3",3," Pushbutton"
-"R1",1,"4 kΩ Resistor"
-"GAS1",1," Gas Sensor"
-"R2, R3, R4",3,"10 kΩ Resistor"
-"Rpot1",1,"10 kΩ Potentiometer"
+Item,Quantity,Component,Approx Cost (INR),Optional Alternative,Notes
+U1,1,Arduino Uno R3,550,Arduino Nano,Main controller board used in the workshop
+TEMP1,1,TMP36 temperature sensor,120,LM35,Reads temperature as an analog value
+GAS1,1,Gas sensor module,180,MQ-2 or MQ-135,Used for an air-quality style analog reading
+LCD1,1,16x2 LCD with I2C backpack,180,16x2 parallel LCD,Displays the selected mode and reading
+SW1,3,Pushbuttons,15,Tactile switches,Used to switch between display modes
+R1,1,4 kOhm resistor,2,4.7 kOhm resistor,Matches the original classroom parts list
+R2,3,10 kOhm resistors,6,4.7 kOhm to 10 kOhm,Commonly used as button pull-down resistors
+RPOT1,1,10 kOhm potentiometer,20,Any 10 kOhm variable resistor,Used as the humidity simulator
+BRD1,1,Breadboard and jumper wires,120,Tinkercad virtual wiring,Needed for a physical build
